@@ -1,18 +1,18 @@
-.container-fluid{
-    align-items: center;
-}
 .bgColor{
-    background-color: #df2033;
+    background-color: #ff6464;
 }
 
 .logo{
     font-weight: bolder;
+    /* color: #df2033; #20DFCC*/
+    /* color: #ea6c79; */
+    color: #ff6464;
     font-size: 50px;
 }
 
-.nav-link{
+/* .nav-link{
     color: #ffffff!important;
-}
+} */
 
 .btnColor{
     background-color: #20DFCC;
