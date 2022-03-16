@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="start">
-        <nav class="navbar navbar-expand-lg navbar-dark bgColor fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bgColor">
             <div class="container-fluid">
                 <a class="navbar-brand fas fa-utensils logo" href="#">PizzaMunchies</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +34,7 @@
                             <a class="nav-link" href="#service">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portoflio">Portfolio</a>
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contactUs">Contact Us</a>
@@ -105,7 +105,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container portfolio" id="portfolio">
         <h1>Portfolio</h1>
         <div class="row">
             <div class="col-lg-3">
@@ -197,6 +197,33 @@
                     </div>
                 </div>
             </div>  
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="contactUs" id="contactUs">
+            <h1>Contact Us</h1>
+            <div>
+                <form class="row g-3">
+                    <div class="col-md-5">
+                      <input type="text" class="form-control inputColor" id="inputName" placeholder="Name" required>
+                    </div>
+                    <div class="col-md-5">
+                      <input type="email" class="form-control inputColor" id="inputEmail" placeholder="Email" required>
+                    </div>
+                    <div class="col-md-11">
+                      <textarea class="form-control inputColor" id="messageText" rows="10" placeholder="Your message here" required></textarea>
+                    </div>
+                    <div>
+                      <button type="button" class="btn btn bg-primary btn-lg" id="submit">Submit</button>
+                    </div>
+                    <div>
+                      <a href="mailChimp.html"><button type="button" class="btn btn bg-primary btn-lg" id="subscribe">Kindly subscribe</button></a>
+                      
+                    </div>
+                    
+                  </form>
+            </div>
         </div>
     </div>
     
