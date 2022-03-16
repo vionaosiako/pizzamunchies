@@ -1,3 +1,7 @@
+.btn{
+    background-color: #20DFCC;
+    color: #000000;
+}
 .bgColor{
     background-color: #ff6464;
 }
@@ -8,6 +12,10 @@
     font-size: 50px;
 }
 
+.nav-item a:hover{
+    color: #20DFCC;
+}
+
 .btnColor{
     background-color: #20DFCC;
 }
@@ -16,18 +24,92 @@
     display: flex;
     justify-content:center;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 .bannerContent{
     text-align: center;
+    /* padding: 10%; */
+    margin-top: 10%;
 }
 
 .bannerImage img{
     width: 90%;
+    animation: float 3s linear infinite;
 
 }
+@keyframes float{
+    0%, 100%{
+      transform: translateY(0rem);
+    }
+    50%{
+      transform: translateY(3rem);
+    }
+  } 
 
+.aboutUsMain{
+    padding:60px;
+    background-color: #f1f0f0;
+}
+
+.service{
+    padding: 60px;
+}
+
+.portfolio{
+    background-color: #f1f0f0;
+    padding: 30px;
+}
 .cardWidth{
     height: 300px;
+}
+.rowPortfolio{
+    margin-top: 20px;
+}
+
+.makeOrder{
+    justify-content: center;
+    padding: 30px;
+}
+
+.contactUs{
+    background-color: #f1f0f0;
+    padding: 30px;
+}
+.footerLinks{
+    background-color: #ff6464;
+    padding: 30px;
+}
+
+.navbarLinks{
+    list-style: none;
+}
+
+.navbarLinks li a{
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px;
+}
+
+.navbarLinks li a:hover{
+    color: #20DFCC;
+}
+.copywrite{
+    background-color: #f1f0f0;
+}
+
+.socialLinks{
+    list-style: none;
+}
+.socialLinks li a{
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px;
+}
+
+.socialLinks li a:hover{
+    color: #20DFCC;
 }

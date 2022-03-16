@@ -45,11 +45,12 @@
         </nav>
     </div><!--End of navbar-->
 
-    <div class="container-fluid">
-        <div class="banner" id="banner">
+    <div class="container-fluid"">
+        <div class="banner" id="banner" style="background-image: url(./images/home-bg.jpg);">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="bannerContent">
+                        <h1>Welcome</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti modi, blanditiis maiores alias deleniti ipsa tempore praesentium. Quidem omnis, natus corporis odio voluptate numquam perspiciatis iste quia architecto nihil sapiente.</p>
                         <button type="button" class="btn btnColor">Make your order</button>
                     </div>
@@ -65,15 +66,15 @@
         </div>
     </div><!--End of banner-->
 
-    <div class="container">
-        <div class="aboutUs" id="aboutUs">
+    <div class="container-fluid aboutUsMain">
+        <div class="aboutUs text-center" id="aboutUs">
             <h1>About Us</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, dolor nisi commodi dolorum obcaecati dolore officiis quibusdam consequatur magni? Impedit cum repellendus iste suscipit aliquam atque, aliquid voluptatibus blanditiis dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde incidunt saepe nostrum impedit sapiente nulla velit numquam, nam, dolor vel hic veritatis magni placeat quaerat, ea ducimus tempore delectus amet!</p>            
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="service" id="service">
+    <div class="container">
+        <div class="service text-center" id="service">
             <h1>SERVICES</h1>
             <div class="row">
                 <div class="col-lg-3">
@@ -105,10 +106,10 @@
         </div>
     </div>
 
-    <div class="container portfolio" id="portfolio">
+    <div class="container-fluid portfolio text-center" id="portfolio">
         <h1>Portfolio</h1>
-        <div class="row">
-            <div class="col-lg-3">
+        <div class="row rowPortfolio">
+            <div class="col-lg-3 ">
                 <div class="card" style="width: 18rem;">
                     <img src="./images/pizza.jpg" class="card-img-top cardWidth" alt="...">
                     <div class="card-body">
@@ -153,8 +154,8 @@
             </div>  
         </div>
 
-        <div class="row">
-            <div class="col-lg-3">
+        <div class="row rowPortfolio">
+            <div class="col-lg-3 space">
                 <div class="card" style="width: 18rem;">
                     <img src="./images/portfolio5.jpg" class="card-img-top cardWidth" alt="...">
                     <div class="card-body">
@@ -165,7 +166,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-3">
+            <div class="col-lg-3 space">
                 <div class="card" style="width: 18rem;">
                     <img src="./images/portfolio6.jpg" class="card-img-top cardWidth" alt="...">
                     <div class="card-body">
@@ -200,10 +201,10 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="makeOrder" id="makeOrder">
+    <div class="container">
+        <div class="makeOrder text-center" id="makeOrder">
             <h1>Make Your Order Now!</h1>
-            <form action="">
+            <form action="" class="">
                 <div class="row g-3 align-items-center">
                     <div class="col-lg-1">
                       <label for="pizzaSize" class="col-form-label">Pizza Size:</label>
@@ -264,7 +265,7 @@
 
                 <div>
                     <button type="button" class="btn btn-primary btn-lg">Order Now</button>
-                <button type="button" class="btn btn-primary btn-lg">Want Delivery</button>
+                    <button type="button" class="btn btn-primary btn-lg">Want Delivery</button>
                 </div>
 
             </form>
@@ -272,8 +273,8 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="contactUs" id="contactUs">
+    <div class="container-fluid">
+        <div class="contactUs text-center" id="contactUs">
             <h1>Contact Us</h1>
             <div>
                 <form class="row g-3">
@@ -287,13 +288,9 @@
                       <textarea class="form-control inputColor" id="messageText" rows="10" placeholder="Your message here" required></textarea>
                     </div>
                     <div>
-                      <button type="button" class="btn btn bg-primary btn-lg" id="submit">Submit</button>
+                        <button type="button" class="btn btn-primary btn-lg">Submit</button>
                     </div>
-                    <div>
-                      <a href="mailChimp.html"><button type="button" class="btn btn bg-primary btn-lg" id="subscribe">Kindly subscribe</button></a>
-                      
-                    </div>
-                    
+                                        
                   </form>
             </div>
         </div>
@@ -301,11 +298,11 @@
 
     <div class="container-fluid">
         <footer>
-            <div class="row">
+            <div class="row footerLinks">
                 <div class="col-lg-4">
                     <h3>Important Link</h3>
                     <div>
-                        <ul class="">
+                        <ul class="navbarLinks">
                             <li>
                                 <a href="#">Home</a>
                             </li>
@@ -329,7 +326,7 @@
                 <div class="col-lg-4">
                     <h3>Social Links</h3>
                     <div>
-                        <ul class="">
+                        <ul class="socialLinks">
                             <li>
                                 <a href="">Facebook</a>
                             </li>
