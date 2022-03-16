@@ -180,7 +180,7 @@
                 <div class="card" style="width: 18rem;">
                     <img src="./images/portfolio7.jpg" class="card-img-top cardWidth" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">Green Peppers</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
@@ -201,6 +201,78 @@
     </div>
 
     <div class="container-fluid">
+        <div class="makeOrder" id="makeOrder">
+            <h1>Make Your Order Now!</h1>
+            <form action="">
+                <div class="row g-3 align-items-center">
+                    <div class="col-lg-1">
+                      <label for="pizzaSize" class="col-form-label">Pizza Size:</label>
+                    </div>
+                    <div class="col-lg-4">
+                        <select class="form-select pizzaSize">
+                            <option selected>Select pizza size</option>
+                            <option value="1">Small</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Large</option>
+                          </select>
+                    </div>                    
+                </div>
+
+                <div class="row g-3 align-items-center">
+                    <div class="col-lg-1">
+                      <label for="pizzaType" class="col-form-label">Pizza Type:</label>
+                    </div>
+                    <div class="col-lg-4">
+                        <select class="form-select pizzaType">
+                            <option selected>Select the type of crust you like</option>
+                            <option value="1"></option>
+                            <option value="2">Staffed</option>
+                            <option value="3">Gluten-free</option>
+                            <option value="4">Thin crust</option>
+                            <option value="5">Thick crust</option>
+                          </select>
+                    </div>                    
+                </div>
+
+                <div class="row g-3 align-items-center">
+                    <div class="col-lg-1">
+                      <label for="pizzaTopping" class="col-form-label">Pizza Topping:</label>
+                    </div>
+                    <div class="col-lg-4">
+                        <select class="form-select pizzaTopping">
+                            <option selected>Select the topping you like</option>
+                            <option value="1">Pepperoni</option>
+                            <option value="2">Mushroom</option>
+                            <option value="3">Onions</option>
+                            <option value="4">Extra Cheese</option>
+                            <option value="5">Green Peppers</option>
+                            <option value="6">Pineapple</option>
+                            <option value="7">Chicken</option>
+                            <option value="8">Black olive</option>
+                          </select>
+                    </div>                    
+                </div>
+
+                <div class="row g-3 align-items-center">
+                    <div class="col-lg-1">
+                      <label for="pizzaQuanitity" class="col-form-label">Quanitity:</label>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="number" id="quantity" name="quantity" min="1" max="100">
+                    </div>                    
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-primary btn-lg">Order Now</button>
+                <button type="button" class="btn btn-primary btn-lg">Want Delivery</button>
+                </div>
+
+            </form>
+        
+        </div>
+    </div>
+
+    <div class="container">
         <div class="contactUs" id="contactUs">
             <h1>Contact Us</h1>
             <div>
@@ -227,67 +299,69 @@
         </div>
     </div>
 
-    <footer>
-        <div class="row">
-            <div class="col-lg-4">
-                <h3>Important Link</h3>
-                <div>
-                    <ul class="">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#aboutUs">About US</a>
-                        </li>
-                        <li>
-                            <a href="#service">Services</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contactUs">Contact Us</a>
-                        </li>
-                                            
-                    </ul>
+    <div class="container-fluid">
+        <footer>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>Important Link</h3>
+                    <div>
+                        <ul class="">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#aboutUs">About US</a>
+                            </li>
+                            <li>
+                                <a href="#service">Services</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#contactUs">Contact Us</a>
+                            </li>
+                                                
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4">
+                    <h3>Social Links</h3>
+                    <div>
+                        <ul class="">
+                            <li>
+                                <a href="">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="">Whats App</a>
+                            </li>   
+                            <li>
+                                <a href="">Instagram</a>
+                            </li> 
+                            <li>
+                                <a href="">Google Plus</a>
+                            </li>
+                            <li>
+                                <a href="">Linked In</a>
+                            </li>                         
+                                               
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4">
+                    <h3>Location</h3> 
+                    <div>
+                        <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=buruburu&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:200px;width:400px;}</style><a href="https://www.embedgooglemap.net">google maps webpage</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:400px;}</style></div></div>
+                    </div>               
                 </div>
             </div>
-
-            <div class="col-lg-4">
-                <h3>Social Links</h3>
-                <div>
-                    <ul class="">
-                        <li>
-                            <a href="">Facebook</a>
-                        </li>
-                        <li>
-                            <a href="">Whats App</a>
-                        </li>   
-                        <li>
-                            <a href="">Instagram</a>
-                        </li> 
-                        <li>
-                            <a href="">Google Plus</a>
-                        </li>
-                        <li>
-                            <a href="">Linked In</a>
-                        </li>                         
-                                           
-                    </ul>
-                </div>
+            <div class="copywrite">
+                <p>copywrite &copy;</p>
             </div>
-
-            <div class="col-lg-4">
-                <h3>Location</h3> 
-                <div>
-                    <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=buruburu&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:200px;width:400px;}</style><a href="https://www.embedgooglemap.net">google maps webpage</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:400px;}</style></div></div>
-                </div>               
-            </div>
-        </div>
-        <div class="copywrite">
-            <p>copywrite &copy;</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
