@@ -52,7 +52,7 @@
                     <div class="bannerContent">
                         <h1>Welcome</h1>
                         <p>Pizza Munchies deliver more delicious toppings, more variety, and more taste. And we’re always looking for new ways to bring more to you, like new products and promotions. As always, our focus is on creating new ways to add more to your dining experience. By stamping our pizzas with our Fresh Never Frozen mark, we ensure that our dough, secret recipe pizza sauce and special blend of 100% cheeses are never frozen. We are committed to a high level of quality and we strive for this by providing the freshest ingredients to our customers.</p>
-                        <button type="button" class="btn btn-primary">Make your order</button>
+                        <a href="#makeOrder"><button type="button" class="btn btn-primary">Make your order</button></a>
                     </div>
 
                 </div>
@@ -272,11 +272,73 @@
                 <div>
                     <button type="button" class="btn btn-primary btn-lg" id="orderBtn">Order Now</button>
                     <button type="button" class="btn btn-primary btn-lg" id="delivery" onclick="deliveryLocation()" >Want Delivery</button>
-                    <p id="total"></p>
+                    
                 </div>
 
             </form>
         
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="yourOrder makeOrder" id="yourOrder">
+            <h1 class="text-center">Your Order</h1>
+            <div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-sm-2">
+                        <h5>customerName: </h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="nameOfUser"></p>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-sm-2">
+                        <h5>Pizza Size: </h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="yourPizzaSize"></p>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-sm-2">
+                        <h5>Pizza Crust: </h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="yourPizzaCrust"></p>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-sm-2">
+                        <h5>Pizza Topping: </h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="yourPizzaTopping"></p>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-sm-2">
+                        <h5>Quantity: </h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="yourPizzaQuantity"></p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-sm-2">
+                        <h5>Total Pizza: </h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="total"></p>
+                    </div>
+                </div>
+            </div>
+            
+            
         </div>
     </div>
 

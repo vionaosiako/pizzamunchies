@@ -33,8 +33,11 @@ class Pizza{
         if (this.crustType === "Staffed") {
           return 200;
         }
-        if (this.crustType === "Thin-crust") {
+        if (this.crustType === "Gluten-free") {
           return 300;
+        }
+        if (this.crustType === "Thin-crust") {
+          return 250;
         }
         if (this.crustType === "Thick-crust") {
           return 400;
@@ -94,7 +97,11 @@ submitBtn.addEventListener('click',function(){
     // document.getElementById("total").innerHTML =`The total price of ${pizza.pizzaQuantity} for ${
     //     pizza.name
     //   } is ${pizza.getTotalPrice()}`
-
+    document.getElementById("nameOfUser").innerHTML = pizza.name;
+    document.getElementById("yourPizzaSize").innerHTML = pizza.pizzaSize;
+    document.getElementById("yourPizzaCrust").innerHTML = pizza.crustType;
+    document.getElementById("yourPizzaTopping").innerHTML = pizza.pizzaTopping;
+    document.getElementById("yourPizzaQuantity").innerHTML = pizza.pizzaQuantity;
     document.getElementById("total").innerHTML = total;
 
         // const pizza = new Pizza(customerName, pizzaSize, crustType, pizzaTopping, pizzaQuantity);
