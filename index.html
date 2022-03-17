@@ -204,8 +204,8 @@
     <div class="container">
         <div class="makeOrder text-center" id="makeOrder">
             <h1>Make Your Order Now!</h1>
-            <form action="" class="">
-                <div class="row g-3 align-items-center">
+            <form action="" class="text-nowrap">
+                <div class="row g-3 align-items-center d-flex justify-content-center">
                     <div class="col-lg-1">
                       <label for="customerName" class="col-form-label">Customer Name:</label>
                     </div>
@@ -214,67 +214,65 @@
                     </div>                    
                 </div>
 
-                <div class="row g-3 align-items-center">
+                <div class="row g-3 align-items-center d-flex justify-content-center">
                     <div class="col-lg-1">
-                      <label for="pizzaSize" class="col-form-label">Pizza Size:</label>
+                      <label for="pizzaSize" class="col-form-label">Select Pizza Size:</label>
                     </div>
                     <div class="col-lg-4">
-                        <select class="form-select pizzaSize">
-                            <option selected>Select pizza size</option>
-                            <option value="1">Small</option>
-                            <option value="2">Medium</option>
-                            <option value="3">Large</option>
+                        <select class="form-select pizzaSize" id="pizzaSize">
+                            <option value="Small">Small</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Large">Large</option>
                           </select>
                     </div>                    
                 </div>
 
-                <div class="row g-3 align-items-center">
+                <div class="row g-3 align-items-center d-flex justify-content-center">
                     <div class="col-lg-1">
-                      <label for="pizzaType" class="col-form-label">Pizza Type:</label>
+                      <label for="crustType" class="col-form-label">Select Crust Type:</label>
                     </div>
                     <div class="col-lg-4">
-                        <select class="form-select pizzaType">
-                            <option selected>Select the type of crust you like</option>
-                            <option value="1"></option>
-                            <option value="2">Staffed</option>
-                            <option value="3">Gluten-free</option>
-                            <option value="4">Thin crust</option>
-                            <option value="5">Thick crust</option>
+                        <select class="form-select crustType" id="crustType">
+                            <option value="Crispy">Crispy</option>
+                            <option value="Staffed">Staffed</option>
+                            <option value="Gluten-free">Gluten-free</option>
+                            <option value="Thin-crust">Thin crust</option>
+                            <option value="Thick-crust">Thick crust</option>
                           </select>
                     </div>                    
                 </div>
 
-                <div class="row g-3 align-items-center">
+                <div class="row g-3 align-items-center d-flex justify-content-center">
                     <div class="col-lg-1">
-                      <label for="pizzaTopping" class="col-form-label">Pizza Topping:</label>
+                      <label for="pizzaTopping" class="col-form-label">Select Pizza Topping:</label>
                     </div>
                     <div class="col-lg-4">
-                        <select class="form-select pizzaTopping">
-                            <option selected>Select the topping you like</option>
-                            <option value="1">Pepperoni</option>
-                            <option value="2">Mushroom</option>
-                            <option value="3">Onions</option>
-                            <option value="4">Extra Cheese</option>
-                            <option value="5">Green Peppers</option>
-                            <option value="6">Pineapple</option>
-                            <option value="7">Chicken</option>
-                            <option value="8">Black olive</option>
+                        <select class="form-select pizzaTopping" id="pizzaTopping">
+                            <option value="Pepperoni">Pepperoni</option>
+                            <option value="Mushroom">Mushroom</option>
+                            <option value="Barbeque">Barbeque</option>
+                            <option value="Extra-Cheese">Extra Cheese</option>
+                            <option value="Vegetable">Vegetable</option>
+                            <option value="Pineapple">Pineapple</option>
+                            <option value="Chicken">Chicken</option>
+                            <option value="Black-olive">Black olive</option>
                           </select>
                     </div>                    
                 </div>
 
-                <div class="row g-3 align-items-center">
+                <div class="row g-3 align-items-center d-flex justify-content-center">
                     <div class="col-lg-1">
-                      <label for="pizzaQuanitity" class="col-form-label">Quanitity:</label>
+                      <label for="pizzaQuanitity" class="col-form-label">Quantity:</label>
                     </div>
                     <div class="col-lg-4">
-                        <input type="number" id="quantity" name="quantity" min="1" max="100">
+                        <input type="number" id="pizzaQuantity" name="quantity" min="1" max="100">
                     </div>                    
                 </div>
 
                 <div>
-                    <button type="button" class="btn btn-primary btn-lg">Order Now</button>
+                    <button type="button" class="btn btn-primary btn-lg" id="orderBtn">Order Now</button>
                     <button type="button" class="btn btn-primary btn-lg" id="delivery" onclick="deliveryLocation()" >Want Delivery</button>
+                    <p id="total"></p>
                 </div>
 
             </form>
