@@ -102,14 +102,17 @@ submitBtn.addEventListener('click',function(){
     if(check){
       document.getElementById("nameOfUser").innerHTML = pizza.name;
       document.getElementById("yourPizzaSize").innerHTML = pizza.pizzaSize;
+      document.getElementById("pizzaSizePrice").innerHTML = pizza.getPriceInSize();
       document.getElementById("yourPizzaCrust").innerHTML = pizza.crustType;
+      document.getElementById("pizzaCrustPrice").innerHTML = pizza.getCrustPrice();
       document.getElementById("yourPizzaTopping").innerHTML = pizza.pizzaTopping;
+      document.getElementById("pizzaToppingPrice").innerHTML = pizza.getPriceInToppings();
       document.getElementById("yourPizzaQuantity").innerHTML = pizza.pizzaQuantity;
       document.getElementById("total").innerHTML = total;
       $("#makeOrder").hide();
       $("#yourOrder").show();
     }
-    
+    document.getElementById("makeOrderForm").reset();
         
 })
 
@@ -128,5 +131,12 @@ function checkIfEmpty(object){
   return true;
   }
 }
+
+let submitContactUsBtn = document.getElementById("submitContactUs");
+submitContactUsBtn.addEventListener('click',function(){
+  alert("Thank you for contactin us");
+  document.getElementById("contactUsForm").reset();
+})
+
 
 

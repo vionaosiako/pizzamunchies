@@ -206,7 +206,7 @@
     <div class="container" id="makeOrderYourOrder">
         <div class="makeOrder text-center" id="makeOrder" style="background-image: url(./images/home-bg.jpg);">
             <h1>Make Your Order Now!</h1>
-            <form action="" class="text-nowrap">
+            <form action="" class="text-nowrap" id="makeOrderForm">
                 <div class="row g-3 align-items-center d-flex justify-content-center">
                     <div class="col-lg-2">
                       <label for="customerName" class="col-form-label">Customer Name:</label>
@@ -287,7 +287,7 @@
             <div>
                 <div class="row d-flex justify-content-center">
                     <div class="col-sm-2">
-                        <h5>Customer Name: </h5>
+                        <h5>CustomerName: </h5>
                     </div>
                     <div class="col-sm-3">
                         <p id="nameOfUser"></p>
@@ -298,8 +298,11 @@
                     <div class="col-sm-2">
                         <h5>Pizza Size: </h5>
                     </div>
-                    <div class="col-sm-3">
-                        <p id="yourPizzaSize"></p>
+                    <div class="col-sm-2">
+                        <p id="yourPizzaSize"></p>                        
+                    </div>
+                    <div class="col-sm-1">
+                        <p id="pizzaSizePrice"></p>                       
                     </div>
                 </div>
 
@@ -307,8 +310,11 @@
                     <div class="col-sm-2">
                         <h5>Pizza Crust: </h5>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-2">
                         <p id="yourPizzaCrust"></p>
+                    </div>
+                    <div class="col-sm-1">
+                        <p id="pizzaCrustPrice"></p>
                     </div>
                 </div>
 
@@ -316,8 +322,11 @@
                     <div class="col-sm-2">
                         <h5>Pizza Topping: </h5>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-2">
                         <p id="yourPizzaTopping"></p>
+                    </div>
+                    <div class="col-sm-1">
+                        <p id="pizzaToppingPrice"></p>
                     </div>
                 </div>
 
@@ -335,7 +344,7 @@
                     </div>
                     <div class="col-sm-3">
                         <p id="total"></p>
-                    </div>
+                    </div>                    
                 </div>
             </div>
             
@@ -356,7 +365,7 @@
         <div class="contactUs text-center" id="contactUs">
             <h1>Contact Us</h1>
             <div>
-                <form action="https://moringaschool.us14.list-manage.com/subscribe/post?u=700deb9acfb1611d28b6785ae&amp;id=a17657fe9e" method="post"  class="validate" target="_blank">
+                <form action="https://moringaschool.us14.list-manage.com/subscribe/post?u=700deb9acfb1611d28b6785ae&amp;id=a17657fe9e" method="post"  class="validate" target="_blank" id="contactUsForm" >
                     <div class="row g-3">
                         <div class="col-md-5">
                             <input type="text" class="form-control inputColor" id="inputName" placeholder="Name" name="NAME" required>
@@ -369,7 +378,7 @@
                       <textarea class="form-control inputColor" id="messageText" rows="10" placeholder="Your message here" name="MESSAGE" required></textarea>
                     </div><br>
                     <div>
-                        <button type="submit" class="btn btn-primary btn-lg btnSubmit">Submit</button>
+                        <button type="submit" class="btn btn-primary btn-lg btnSubmit" id="submitContactUs">Submit</button>
                         
                     </div>
                                         
