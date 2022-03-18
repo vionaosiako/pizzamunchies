@@ -92,7 +92,6 @@ submitBtn.addEventListener('click',function(){
     pizza.pizzaQuantity = parseInt(document.getElementById("pizzaQuantity").value);
 
     let total = pizza.getTotalPrice();
-    // console.log(total);
 
     // document.getElementById("total").innerHTML =`The total price of ${pizza.pizzaQuantity} for ${
     //     pizza.name
@@ -104,16 +103,7 @@ submitBtn.addEventListener('click',function(){
     document.getElementById("yourPizzaQuantity").innerHTML = pizza.pizzaQuantity;
     document.getElementById("total").innerHTML = total;
 
-        // const pizza = new Pizza(customerName, pizzaSize, crustType, pizzaTopping, pizzaQuantity);
-    
-        // console.log(pizza.name);
-        // console.log(pizza.pizzaSize);
-        // console.log(pizza.crustType);
-        // console.log(pizza.pizzaTopping);
-        // console.log(pizza.pizzaQuantity);
-
-        console.log(pizza.getpizzaTopings);
-    
+        
 })
 
 
