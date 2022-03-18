@@ -84,6 +84,9 @@ class Pizza{
 
 let submitBtn = document.getElementById("orderBtn");
 submitBtn.addEventListener('click',function(){
+
+  // checkIfEmpty();
+    
     const pizza = new Pizza();
     pizza.name = document.getElementById("customerName").value;
     pizza.pizzaSize = document.getElementById("pizzaSize").value;
@@ -105,6 +108,17 @@ submitBtn.addEventListener('click',function(){
 
         
 })
+
+function checkIfEmpty(){
+  if(Pizza.name.value.trim() == ""){
+    alert("Fill in your name please");
+  }
+
+  if(Pizza.pizzaQuantity.value.trim() == ""){
+    alert("Enter quantity needed");
+  }
+
+}
 
 
 

@@ -201,8 +201,8 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="makeOrder text-center" id="makeOrder">
+    <div class="container" id="makeOrderYourOrder">
+        <div class="makeOrder text-center" id="makeOrder" style="background-image: url(./images/home-bg.jpg);">
             <h1>Make Your Order Now!</h1>
             <form action="" class="text-nowrap">
                 <div class="row g-3 align-items-center d-flex justify-content-center">
@@ -271,17 +271,16 @@
 
                 <div>
                     <button type="button" class="btn btn-primary btn-lg" id="orderBtn">Order Now</button>
-                    <button type="button" class="btn btn-primary btn-lg" id="delivery" onclick="deliveryLocation()" >Want Delivery</button>
-                    
+                                        
                 </div>
 
             </form>
         
-        </div>
-    </div>
+        </div><!--End of makeOrder-->
+        <!-- </div>
 
-    <div class="container">
-        <div class="yourOrder makeOrder" id="yourOrder">
+        <div class="container"> -->
+        <div class="yourOrder makeOrder" id="yourOrder" style="background-image: url(./images/home-bg.jpg);">
             <h1 class="text-center">Your Order</h1>
             <div>
                 <div class="row d-flex justify-content-center">
@@ -338,26 +337,38 @@
                 </div>
             </div>
             
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-primary btn-lg" id="delivery" onclick="deliveryLocation()"  >Want Delivery</button><br>
+                </div>
+
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-primary btn-lg" id="backToOrderBtn">Back to order</button>                    
+                </div>
+            </div>
             
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-image: url(./images/pizza.jpg);">
         <div class="contactUs text-center" id="contactUs">
             <h1>Contact Us</h1>
             <div>
-                <form action="https://moringaschool.us14.list-manage.com/subscribe/post?u=700deb9acfb1611d28b6785ae&amp;id=a17657fe9e" method="post"  class="validate" target="_blank" class="row g-3">
-                    <div class="col-md-5">
-                      <input type="text" class="form-control inputColor" id="inputName" placeholder="Name" name="NAME" required>
-                    </div><br>
-                    <div class="col-md-5">
-                      <input type="email" class="form-control inputColor" id="inputEmail" placeholder="Email" name="EMAIL" required>
+                <form action="https://moringaschool.us14.list-manage.com/subscribe/post?u=700deb9acfb1611d28b6785ae&amp;id=a17657fe9e" method="post"  class="validate" target="_blank">
+                    <div class="row g-3">
+                        <div class="col-md-5">
+                            <input type="text" class="form-control inputColor" id="inputName" placeholder="Name" name="NAME" required>
+                        </div><br>
+                        <div class="col-md-5">
+                            <input type="email" class="form-control inputColor" id="inputEmail" placeholder="Email" name="EMAIL" required>
+                        </div>
                     </div><br>
                     <div class="col-md-11">
                       <textarea class="form-control inputColor" id="messageText" rows="10" placeholder="Your message here" name="MESSAGE" required></textarea>
                     </div><br>
                     <div>
-                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                        <button type="submit" class="btn btn-primary btn-lg btnSubmit">Submit</button>
+                        
                     </div>
                                         
                   </form>
@@ -429,8 +440,11 @@
         </footer>
     </div>
     
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <script src="./js/main.js"></script>
+    <script src="./js/jquery.js"></script>
   </body>
 </html>

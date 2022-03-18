@@ -73,11 +73,30 @@
 .makeOrder{
     justify-content: center;
     padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.yourOrder{
+    display: none;
 }
 
 .contactUs{
-    background-color: #f1f0f0;
+    /* background-color: #f1f0f0; */
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 30px;
+    color: #ffffff;
+}
+.contactUs input{
+    background-color: transparent;
+}
+
+.contactUs textarea{
+    background-color: transparent;
+}
+.btnSubmit{
+    width: 50%;
 }
 .footerLinks{
     background-color: #ff6464;
