@@ -206,16 +206,16 @@
             <h1>Make Your Order Now!</h1>
             <form action="" class="text-nowrap">
                 <div class="row g-3 align-items-center d-flex justify-content-center">
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                       <label for="customerName" class="col-form-label">Customer Name:</label>
                     </div>
                     <div class="col-lg-4">
-                        <input type="text" name="customerName" id="customerName">
+                        <input type="text" name="customerName" id="customerName" style="width: 100%;">
                     </div>                    
-                </div>
+                </div><br>
 
                 <div class="row g-3 align-items-center d-flex justify-content-center">
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                       <label for="pizzaSize" class="col-form-label">Select Pizza Size:</label>
                     </div>
                     <div class="col-lg-4">
@@ -225,10 +225,10 @@
                             <option value="Large">Large</option>
                           </select>
                     </div>                    
-                </div>
+                </div><br>
 
                 <div class="row g-3 align-items-center d-flex justify-content-center">
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                       <label for="crustType" class="col-form-label">Select Crust Type:</label>
                     </div>
                     <div class="col-lg-4">
@@ -240,10 +240,10 @@
                             <option value="Thick-crust">Thick crust</option>
                           </select>
                     </div>                    
-                </div>
+                </div><br>
 
                 <div class="row g-3 align-items-center d-flex justify-content-center">
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                       <label for="pizzaTopping" class="col-form-label">Select Pizza Topping:</label>
                     </div>
                     <div class="col-lg-4">
@@ -258,16 +258,16 @@
                             <option value="Black-olive">Black olive</option>
                           </select>
                     </div>                    
-                </div>
+                </div><br>
 
                 <div class="row g-3 align-items-center d-flex justify-content-center">
-                    <div class="col-lg-1">
+                    <div class="col-lg-2">
                       <label for="pizzaQuanitity" class="col-form-label">Quantity:</label>
                     </div>
                     <div class="col-lg-4">
-                        <input type="number" id="pizzaQuantity" name="quantity" min="1" max="100">
+                        <input type="number" id="pizzaQuantity" name="quantity" min="1" max="100" style="width: 100%;">
                     </div>                    
-                </div>
+                </div><br>
 
                 <div>
                     <button type="button" class="btn btn-primary btn-lg" id="orderBtn">Order Now</button>
@@ -346,18 +346,18 @@
         <div class="contactUs text-center" id="contactUs">
             <h1>Contact Us</h1>
             <div>
-                <form class="row g-3">
+                <form action="https://moringaschool.us14.list-manage.com/subscribe/post?u=700deb9acfb1611d28b6785ae&amp;id=a17657fe9e" method="post"  class="validate" target="_blank" class="row g-3">
                     <div class="col-md-5">
-                      <input type="text" class="form-control inputColor" id="inputName" placeholder="Name" required>
-                    </div>
+                      <input type="text" class="form-control inputColor" id="inputName" placeholder="Name" name="NAME" required>
+                    </div><br>
                     <div class="col-md-5">
-                      <input type="email" class="form-control inputColor" id="inputEmail" placeholder="Email" required>
-                    </div>
+                      <input type="email" class="form-control inputColor" id="inputEmail" placeholder="Email" name="EMAIL" required>
+                    </div><br>
                     <div class="col-md-11">
-                      <textarea class="form-control inputColor" id="messageText" rows="10" placeholder="Your message here" required></textarea>
-                    </div>
+                      <textarea class="form-control inputColor" id="messageText" rows="10" placeholder="Your message here" name="MESSAGE" required></textarea>
+                    </div><br>
                     <div>
-                        <button type="button" class="btn btn-primary btn-lg">Submit</button>
+                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                     </div>
                                         
                   </form>
