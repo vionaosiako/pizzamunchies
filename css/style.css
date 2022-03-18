@@ -1,4 +1,9 @@
-.btn{
+*{
+margin: 0px;
+padding: 0px;
+font-family: "Trirong", serif;
+/* font-family: 'IBM Plex Serif', serif; */
+}.btn{
     background-color: #20DFCC;
     color: #000000;
 }
@@ -82,7 +87,6 @@
 }
 
 .contactUs{
-    /* background-color: #f1f0f0; */
     background-repeat: no-repeat;
     background-size: cover;
     padding: 30px;

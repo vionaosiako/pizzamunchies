@@ -84,8 +84,6 @@ class Pizza{
 
 let submitBtn = document.getElementById("orderBtn");
 submitBtn.addEventListener('click',function(){
-
-  // checkIfEmpty();
     
     const pizza = new Pizza();
     pizza.name = document.getElementById("customerName").value;
@@ -93,35 +91,42 @@ submitBtn.addEventListener('click',function(){
     pizza.crustType = document.getElementById("crustType").value;
     pizza.pizzaTopping = document.getElementById("pizzaTopping").value;
     pizza.pizzaQuantity = parseInt(document.getElementById("pizzaQuantity").value);
-
+    
     let total = pizza.getTotalPrice();
-
+    
+    let check = checkIfEmpty(pizza);
     // document.getElementById("total").innerHTML =`The total price of ${pizza.pizzaQuantity} for ${
     //     pizza.name
     //   } is ${pizza.getTotalPrice()}`
-    document.getElementById("nameOfUser").innerHTML = pizza.name;
-    document.getElementById("yourPizzaSize").innerHTML = pizza.pizzaSize;
-    document.getElementById("yourPizzaCrust").innerHTML = pizza.crustType;
-    document.getElementById("yourPizzaTopping").innerHTML = pizza.pizzaTopping;
-    document.getElementById("yourPizzaQuantity").innerHTML = pizza.pizzaQuantity;
-    document.getElementById("total").innerHTML = total;
-
+    
+    if(check){
+      document.getElementById("nameOfUser").innerHTML = pizza.name;
+      document.getElementById("yourPizzaSize").innerHTML = pizza.pizzaSize;
+      document.getElementById("yourPizzaCrust").innerHTML = pizza.crustType;
+      document.getElementById("yourPizzaTopping").innerHTML = pizza.pizzaTopping;
+      document.getElementById("yourPizzaQuantity").innerHTML = pizza.pizzaQuantity;
+      document.getElementById("total").innerHTML = total;
+      $("#makeOrder").hide();
+      $("#yourOrder").show();
+    }
+    
         
 })
 
-function checkIfEmpty(){
-  if(Pizza.name.value.trim() == ""){
+function checkIfEmpty(object){
+    
+  if(object.name.trim() == ""){
     alert("Fill in your name please");
-  }
+    return false;
+  }else
 
-  if(Pizza.pizzaQuantity.value.trim() == ""){
+  if(isNaN(object.pizzaQuantity)){
     alert("Enter quantity needed");
+    return false;
+  }else{
+   
+  return true;
   }
-
 }
-
-
-
-
 
 
