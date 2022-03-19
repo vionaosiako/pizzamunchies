@@ -5,12 +5,12 @@ function deliveryLocation(){
 }
 
 class Pizza{
-    constructor(customerName, pizzaSize, crustType, pizzaTopping, pizzaQuantity)
+    constructor(customerName, pizzaSize, crustType, pizzaToppings, pizzaQuantity)
     {
         this.customerName = customerName;
         this.pizzaSize = pizzaSize;
         this.crustType = crustType;
-        this.pizzaTopping = pizzaTopping;
+        this.pizzaTopping = pizzaToppings;
         this.pizzaQuantity = pizzaQuantity;
     }
     // methods
@@ -44,38 +44,47 @@ class Pizza{
         }
       }
     
-      getPriceInToppings() {
-        if (this.pizzaTopping === "Pepperoni") {
+      getPizzaToppingTotalPrice(){
+        let total = 0;
+        for(var i = 0; i<this.pizzaToppings.length; i++){
+          total += this.getPriceInToppings(this.pizzaToppings[i])          
+        }
+        return total;
+      }
+      getPriceInToppings(topping) {
+        if (topping === "Pepperoni") {
           return 100;
         }
-        if (this.pizzaTopping === "Mushroom") {
+        if (topping === "Mushroom") {
           return 200;
         }
-        if (this.pizzaTopping === "Barbeque") {
+        if (topping === "Barbeque") {
           return 300;
         }
-        if (this.pizzaTopping === "Extra-Cheese") {
+        if (topping === "Extra-Cheese") {
           return 400;
         }
-        if (this.pizzaTopping === "Vegetable") {
+        if (topping === "Vegetable") {
           return 500;
         }
-        if (this.pizzaTopping === "Pineapple") {
+        if (topping === "Pineapple") {
           return 600;
         }
-        if (this.pizzaTopping === "Chicken") {
+        if (topping === "Chicken") {
           return 700;
         }
-        if (this.pizzaTopping === "Black-olive") {
+        if (topping === "Black-olive") {
           return 800;
         }
+        return 0;
       }
+      
 
       getTotalPrice() {
         return (
           (this.getPriceInSize() +
             this.getCrustPrice() +
-            this.getPriceInToppings()) *
+            this.getPizzaToppingTotalPrice()) *
           this.pizzaQuantity
         );
       }
@@ -89,7 +98,9 @@ submitBtn.addEventListener('click',function(){
     pizza.name = document.getElementById("customerName").value;
     pizza.pizzaSize = document.getElementById("pizzaSize").value;
     pizza.crustType = document.getElementById("crustType").value;
-    pizza.pizzaTopping = document.getElementById("pizzaTopping").value;
+    // pizza.pizzaTopping = document.getElementById("pizzaToppings").value;
+    pizza.pizzaToppings = $('#pizzaToppings').select2('val');// val 
+    
     pizza.pizzaQuantity = parseInt(document.getElementById("pizzaQuantity").value);
     
     let total = pizza.getTotalPrice();
@@ -105,8 +116,8 @@ submitBtn.addEventListener('click',function(){
       document.getElementById("pizzaSizePrice").innerHTML = pizza.getPriceInSize();
       document.getElementById("yourPizzaCrust").innerHTML = pizza.crustType;
       document.getElementById("pizzaCrustPrice").innerHTML = pizza.getCrustPrice();
-      document.getElementById("yourPizzaTopping").innerHTML = pizza.pizzaTopping;
-      document.getElementById("pizzaToppingPrice").innerHTML = pizza.getPriceInToppings();
+      document.getElementById("yourPizzaTopping").innerHTML = pizza.pizzaToppings;
+      document.getElementById("pizzaToppingPrice").innerHTML = pizza.getPizzaToppingTotalPrice();
       document.getElementById("yourPizzaQuantity").innerHTML = pizza.pizzaQuantity;
       document.getElementById("total").innerHTML = total;
       $("#makeOrder").hide();
@@ -137,6 +148,4 @@ submitContactUsBtn.addEventListener('click',function(){
   alert("Thank you for contactin us");
   document.getElementById("contactUsForm").reset();
 })
-
-
 

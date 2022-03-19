@@ -4,6 +4,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--select2 CND-->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -11,7 +14,7 @@
     <!--Google font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap & CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Pizza Munchies</title>
@@ -246,10 +249,10 @@
 
                 <div class="row g-3 align-items-center d-flex justify-content-center">
                     <div class="col-lg-2">
-                      <label for="pizzaTopping" class="col-form-label">Select Pizza Topping:</label>
+                      <label for="toppings[]" class="col-form-label">Select Pizza Topping:</label>
                     </div>
-                    <div class="col-lg-4">
-                        <select class="form-select pizzaTopping" id="pizzaTopping">
+                    <div class="col-lg-4 form-group">
+                        <select class="js-example-basic-multiple form-control" name="toppings[]" multiple="multiple" id="pizzaToppings">
                             <option value="Pepperoni">Pepperoni</option>
                             <option value="Mushroom">Mushroom</option>
                             <option value="Barbeque">Barbeque</option>
@@ -259,7 +262,19 @@
                             <option value="Chicken">Chicken</option>
                             <option value="Black-olive">Black olive</option>
                           </select>
-                    </div>                    
+                    </div>
+                    <!-- <div class="col-lg-4">
+                        <select class="form-select pizzaToppings" id="pizzaToppings">
+                            <option value="Pepperoni">Pepperoni</option>
+                            <option value="Mushroom">Mushroom</option>
+                            <option value="Barbeque">Barbeque</option>
+                            <option value="Extra-Cheese">Extra Cheese</option>
+                            <option value="Vegetable">Vegetable</option>
+                            <option value="Pineapple">Pineapple</option>
+                            <option value="Chicken">Chicken</option>
+                            <option value="Black-olive">Black olive</option>
+                          </select>
+                    </div>                     -->
                 </div><br>
 
                 <div class="row g-3 align-items-center d-flex justify-content-center">
@@ -451,11 +466,15 @@
         </footer>
     </div>
     
+    <!--cnd js-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
+    <!--boostrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+    <!--cdn select two-->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/jquery.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
