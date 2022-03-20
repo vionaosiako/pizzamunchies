@@ -2,7 +2,6 @@
 margin: 0px;
 padding: 0px;
 font-family: "Trirong", serif;
-/* font-family: 'IBM Plex Serif', serif; */
 }.btn{
     background-color: #20DFCC;
     color: #000000;
@@ -136,3 +135,10 @@ font-family: "Trirong", serif;
 .socialLinks li a:hover{
     color: #20DFCC;
 }
+
+/* @media screen and(max-width:460px){
+    
+    .mapShow{
+        display: none;
+    }
+} */
